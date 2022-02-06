@@ -17,7 +17,7 @@ import RadioBtnGroup from "../RadioBtnGroup";
 import WrapperBtnLabelIcon from "../WrapperBtnLabelIcon";
 import SearchWrapper from "../SearchWrapper";
 import { useDispatch, useSelector } from "react-redux";
-import { createAction } from "../../actions";
+import { createAction } from "../../utils/helpers/actionsCreater";
 import { uniqBy } from "lodash";
 import { useTranslation } from "react-i18next";
 import WrapperTag from "../WrapperTag";

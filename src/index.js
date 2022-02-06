@@ -23,6 +23,8 @@ const client = new ApolloClient({
   cache: new InMemoryCache(),
 });
 
+
+
 const store = createStore(reducer);
 
 ReactDOM.render(

@@ -4,7 +4,7 @@ import AutnForm from "../AutnForm";
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../../firebase";
 import { useHistory } from "react-router-dom";
-import { createAction } from "../../actions";
+import { createAction } from "../../utils/helpers/actionsCreater";
 import { useDispatch } from "react-redux";
 import { useTranslation } from "react-i18next";
 import "./style.css";

@@ -1,4 +1,4 @@
-import React, { memo, useState } from "react";
+import React, { memo, useEffect, useState } from "react";
 import PropTypes from "prop-types";
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 import { useTranslation } from "react-i18next";
@@ -12,7 +12,9 @@ import {
   List,
 } from "@mui/material";
 import "./style.css";
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
+import { CITY } from "../../utils/constants";
+import { createAction } from "../../utils/helpers/actionsCreater";
 
 const SimpleDialog = (props) => {
   const { onClose, selectedValue, open } = props;
@@ -65,19 +67,21 @@ SimpleDialog.propTypes = {
 
 const SimpleDialogDemo = () => {
   const { t } = useTranslation();
-  const cities = [
-    t("cities.part1"),
-    t("cities.part2"),
-    t("cities.part3"),
-    t("cities.part4"),
-    t("cities.part4"),
-    t("cities.part5"),
-    t("cities.part6"),
-    t("cities.part7"),
-  ];
 
   const [open, setOpen] = useState(false);
-  const [selectedValue, setSelectedValue] = useState(cities[1]);
+  const [selectedValue, setSelectedValue] = useState("Казань");
+
+  const dispatch = useDispatch();
+
+  const getCurrentCity = (value) => {
+    const result = CITY.filter((sity) => sity.city.includes(value));
+    dispatch(createAction("SET_CURRENT_CITY", ...result));
+  };
+
+  useEffect(() => {
+    getCurrentCity(selectedValue);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [selectedValue]);
 
   const className = useSelector((state) => state.classNamePopup);
 

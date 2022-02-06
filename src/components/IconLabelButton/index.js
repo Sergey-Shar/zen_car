@@ -1,6 +1,6 @@
 import React, { memo, useCallback } from "react";
 import { useDispatch } from "react-redux";
-import { createAction } from "../../actions";
+import { createAction } from "../../utils/helpers/actionsCreater";
 import { useTranslation } from "react-i18next";
 import Btn from "../Button";
 

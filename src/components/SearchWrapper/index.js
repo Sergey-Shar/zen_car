@@ -5,7 +5,7 @@ import Title from "../Title";
 import ToggleBtn from "../ToggleButton";
 import SearchForm from "../SearchForm";
 import { useDispatch } from "react-redux";
-import { actionToggle } from "../../actions";
+import { actionToggle } from "../../utils/helpers/actionsCreater";
 
 const SearchWrapper = () => {
   const isSearchShow = useSelector((state) => state.isSearchShow);

@@ -6,7 +6,7 @@ import { IconButton, Typography } from "@mui/material";
 import LogoutIcon from "@mui/icons-material/Logout";
 import AccountCircleOutlinedIcon from "@mui/icons-material/AccountCircleOutlined";
 import { signOut } from "firebase/auth";
-import { logAut } from "../../actions";
+import { logAut } from "../../utils/helpers/actionsCreater";
 import { auth } from "../../firebase";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import "./style.css";

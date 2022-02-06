@@ -3,7 +3,7 @@ import AutnForm from "../AutnForm";
 import { useHistory } from "react-router-dom";
 import { auth } from "../../firebase";
 import { signInWithEmailAndPassword } from "firebase/auth";
-import { createAction } from "../../actions";
+import { createAction } from "../../utils/helpers/actionsCreater";
 import { useDispatch } from "react-redux";
 import { Container } from "@mui/material";
 import { useTranslation } from "react-i18next";

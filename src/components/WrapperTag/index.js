@@ -5,7 +5,7 @@ import { GET_PARENT_ID_SYMPTOMS } from "../../query/queryParentIdSymptoms";
 import { useSelector, useDispatch } from "react-redux";
 import { Grid } from "@mui/material";
 import Tag from "../Tag";
-import { createAction } from "../../actions";
+import { createAction } from "../../utils/helpers/actionsCreater";
 
 const WrapperTag = () => {
   const dispatch = useDispatch();

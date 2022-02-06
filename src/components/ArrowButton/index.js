@@ -2,7 +2,7 @@ import React, { memo, useCallback } from "react";
 import { IconButton } from "@mui/material";
 import { ArrowBack } from "@mui/icons-material";
 import { useSelector, useDispatch } from "react-redux";
-import { createAction } from "../../actions";
+import { createAction } from "../../utils/helpers/actionsCreater";
 
 const ArrowBtn = () => {
   const dispatch = useDispatch();
