@@ -1,0 +1,13 @@
+.auto-complete-item{
+    list-style: none;
+    width: 100%;
+    border-bottom: 1px solid #dde1ec;
+    padding: 10px;
+ }
+ 
+ .auto-complete-item:hover{
+     background-color:#dde1ec ;
+     cursor: pointer;
+     font-weight: 500;
+     transition: cubic-bezier(1,0,0,1) .3s all;
+ }

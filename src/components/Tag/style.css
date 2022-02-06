@@ -1,0 +1,21 @@
+.tagBtn{
+    width: 16rem;
+    min-height: 6rem;
+    border: none;
+    border-radius: 0.7rem;
+    cursor: pointer;
+    background-color: #f8f8fb;
+    transition: 0.5s linear;
+   
+}
+
+.tagBtn:hover{
+    transform: scale(1.1);
+    background-color: #dde1ec;
+}
+
+@media(max-width:760px){
+    .tagBtn{
+        width: 100%;
+    }
+}

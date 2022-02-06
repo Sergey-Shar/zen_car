@@ -1,0 +1,57 @@
+{
+    "title": {
+      "title": "Which part of the car needs a repair?",
+      "label": "Start typing the work title or symptom",
+      "part1": "Selected services",
+      "part2": "Spare parts and consumables"
+    },
+  
+    "steps": {
+      "part1": "SERVICES & PARTS",
+      "part2": "WISHES",
+      "part3": "CONTACTS"
+    },
+  
+    "button": {
+      "services": "Choose services",
+      "symptoms": "Describe symptoms",
+      "backServices": "Add more services",
+      "addServices": "Back to selected services",
+      "part1": "I will buy in a workshop",
+      "part2": "I will bring my own",
+      "part3": "Not needed"
+    },
+  
+    "cities": {
+      "tittle": "Select city",
+      "part1": "Almetyevsk",
+      "part2": "Ekaterinburg",
+      "part3": "Innopolis",
+      "part4": "Kazan",
+      "part5": "Krasnodar",
+      "part6": "Moscow",
+      "part7": "Nizhny Novgorod",
+      "part8": "St. Petersburg"
+    },
+    "tabs": {
+      "part1": "Find workshop",
+      "part2": "For workshop",
+      "part3": "Services",
+      "part4": "Request for repair",
+      "part5": "My profile"
+    },
+  
+    "auth": {
+      "part1": "Sign in",
+      "part2": "Sign up",
+      "part3": "Request for repair",
+      "email": "Email",
+      "pass": "Password",
+      "logAut": "Sign-aut",
+      "client": "Client"
+    },
+  
+    "profile": {
+      "title": "MY PROFILE"
+    }
+  }

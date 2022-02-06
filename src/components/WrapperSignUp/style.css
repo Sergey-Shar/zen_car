@@ -1,0 +1,8 @@
+.wrapper-form-auth{
+    background-color: #ffffff;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom: 2px solid #dde1ec;
+    min-height: 35rem;
+    padding-top: 5rem;
+}
