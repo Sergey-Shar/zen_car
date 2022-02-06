@@ -1,0 +1,17 @@
+.log-aut{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    width: 100%;
+}
+
+@media (max-width: 760px) {
+    .log-aut{
+        border: 1px solid #dde1ec;
+        border-radius: 10px;
+        flex-wrap: wrap;
+        justify-content: start;
+        gap: 0.5rem;
+        padding: 0.8rem;
+    }
+    }

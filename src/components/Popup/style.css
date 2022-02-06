@@ -1,0 +1,9 @@
+.popup{
+    display: flex;
+}
+
+@media (max-width: 760px) {
+    .popup{
+        display: none;
+    }
+    }

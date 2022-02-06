@@ -1,0 +1,14 @@
+.auto-complete-wrapper {
+    border: 1px solid #dde1ec;
+    border-radius: 0.5rem;
+    max-height: 15rem;
+    height: auto;
+    overflow: auto;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.15);
+  }
+  
+  @media (max-width: 760px) {
+    .form {
+      display: none;
+    }
+  }
