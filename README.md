@@ -7,6 +7,12 @@
 
 Моей задачей было повторить функционал из этой части приложения: https://zen.car/repair-wizard. 
 
+![testwork example](./assets/images/img1.png)
+
+![testwork example](./assets/images/img2.png)
+
+![testwork example](./assets/images/img3.png)
+
 Здесь пользователь может пошагово выбирать услуги/симпотомы и в итоге получает конечный список работ, который сохраняется в Local storage, что дает возможность вернуться к нему из любой части приложения. Так же функционал приложения позволяет пользователю перемещаться назад по дереву услуг и изменять список добавляя новые и удаляя не нужные работы из списка.
 
 Данные о услугах и симптомах предоставляет API реализованное с помощью [GraphQl](https://graphql.org/).
@@ -40,14 +46,6 @@
 * [i18Next](https://react.i18next.com/)
 
 * [Material-UI](https://mui.com/)
-
-
-
-![testwork example](./assets/images/img1.png)
-
-![testwork example](./assets/images/img2.png)
-
-![testwork example](./assets/images/img3.png)
 
 
 

@@ -8,7 +8,7 @@ import { createStore } from "redux";
 import reducer from "./reducer";
 import "./firebase";
 import { ThemeProvider, createTheme } from "@mui/material";
-import { client } from "./api/AppoloInstance"
+import { client } from "./api/AppoloInstance";
 import "./index.css";
 
 const theme = createTheme({

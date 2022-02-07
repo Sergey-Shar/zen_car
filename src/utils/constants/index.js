@@ -44,3 +44,9 @@ export const CITY = [
     lng: 30.3351,
   },
 ];
+
+export const CURRENT_GEO = {
+  city: "Казань",
+  lat: 55.83043,
+  lng: 49.06608,
+};
