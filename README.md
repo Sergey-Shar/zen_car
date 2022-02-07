@@ -1,70 +1,78 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# ZEN.CAR App
 
-## Available Scripts
+## О проекте:
 
-In the project directory, you can run:
+Этот проект является частичной копией https://zen.car.
 
-### `yarn start`
+Моей задачей было повторить функционал из этой части приложения: https://zen.car/repair-wizard. 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Здесь пользователь может пошагово выбирать услуги/симпотомы и в итоге получает конечный список работ, который сохраняется в Local storage, что дает возможность вернуться к нему из любой части приложения. Так же функционал приложения позволяет пользователю перемещаться назад по дереву услуг и изменять список добавляя новые и удаляя не нужные работы из списка.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Данные о услугах и симптомах предоставляет API реализованное с помощью [GraphQl](https://graphql.org/).
 
-### `yarn test`
+ Для интеграции с Google Maps я использовал библиотеку [Google-maps-react](https://www.npmjs.com/package/google-maps-react)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Так же в приложении используется [Firebase](https://console.firebase.google.com/), благодоря чему добавлен функционал регистрации нового пользователя(клиента)  и  дальнешей его аутентификации на основе предоставленого адреса электронной почты и пароля. 
 
-### `yarn build`
+В добавок мы имеем возможность  переводить  текст приложения с русского языка на английский  и наоборот, для добавления этой фичи я воспользовался [i18Next](https://react.i18next.com/)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Для разработки приложения я использовал следующие инструменты:
 
-### `yarn eject`
+* [React.js](https://reactjs.org/)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+* [Redux](https://redux.js.org/)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+* [React-router-dom](https://v5.reactrouter.com/)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+* [Firebase](https://console.firebase.google.com/)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+* [GraphQl](https://graphql.org/)
 
-## Learn More
+* [AppoloGraphQl](https://www.apollographql.com/)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+* [Lodash](https://lodash.com/)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+* [Google-maps-react](https://www.npmjs.com/package/google-maps-react)
 
-### Code Splitting
+* [i18Next](https://react.i18next.com/)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+* [Material-UI](https://mui.com/)
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
+![testwork example](./assets/images/img1.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+![testwork example](./assets/images/img2.png)
 
-### Advanced Configuration
+![testwork example](./assets/images/img3.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+В тeкущей ветке вы можете ознакомиться с кодом.
 
-### `yarn build` fails to minify
+[Tут]( https://sergey-shar.github.io/zen-car-project/) посмотреть на  работу приложения в браузере. 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+Быстрый старт:
+
+- Склонировать репозиторий
+
+```
+  git clone
+```
+
+- Установить зависимости
+
+```
+  yarn install
+```
+
+- Запустить проект
+
+```
+  yarn start
+
+
