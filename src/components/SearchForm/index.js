@@ -2,7 +2,7 @@ import React, { memo, useCallback } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { createAction, actionClearInput } from "../../utils/helpers/actionsCreater";
 import Search from "../SearchBar";
-import { GET_NAME_WORKS } from "../../query/queryNameWorks";
+import { GET_NAME_WORKS } from "../../api/Requests/queryNameWorks";
 import { useQuery } from "@apollo/client";
 import AutoComplete from "../SearchAutoComplete";
 import "./style.css";

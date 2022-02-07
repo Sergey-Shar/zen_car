@@ -1,7 +1,7 @@
 import React, { memo, useCallback, useState, useEffect } from "react";
 import { useQuery } from "@apollo/client";
-import { GET_PARENT_ID_WORKS } from "../../query/queryParentIdWorks";
-import { GET_PARENT_ID_SYMPTOMS } from "../../query/queryParentIdSymptoms";
+import { GET_PARENT_ID_WORKS } from "../../api/Requests/queryParentIdWorks";
+import { GET_PARENT_ID_SYMPTOMS } from "../../api/Requests/queryParentIdSymptoms";
 import { useSelector, useDispatch } from "react-redux";
 import { Grid } from "@mui/material";
 import Tag from "../Tag";
