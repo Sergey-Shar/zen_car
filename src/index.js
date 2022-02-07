@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { ApolloClient, InMemoryCache, ApolloProvider } from "@apollo/client";
+import { ApolloProvider } from "@apollo/client";
 import "./i18n";
 import App from "./app";
 import { Provider } from "react-redux";
@@ -8,6 +8,7 @@ import { createStore } from "redux";
 import reducer from "./reducer";
 import "./firebase";
 import { ThemeProvider, createTheme } from "@mui/material";
+import { client } from "./api/AppoloInstance"
 import "./index.css";
 
 const theme = createTheme({
@@ -17,13 +18,6 @@ const theme = createTheme({
     },
   },
 });
-
-const client = new ApolloClient({
-  uri: "https://zencar-backend-dev.dev.zen.car/graphql",
-  cache: new InMemoryCache(),
-});
-
-
 
 const store = createStore(reducer);
 

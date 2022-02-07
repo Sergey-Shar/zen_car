@@ -1,8 +1,8 @@
 import React, { useCallback, useEffect, useState, memo } from "react";
 import { useQuery } from "@apollo/client";
 import HorizontalsSteps from "../HorizontalsSters";
-import { GET_ID_WORKS } from "../../query/queryIdWorks";
-import { GET_ID_SYMPTOMS } from "../../query/queryIdSymptoms";
+import { GET_ID_WORKS } from "../../api/Requests/queryIdWorks";
+import { GET_ID_SYMPTOMS } from "../../api/Requests/queryIdSymptoms";
 import { Container, Grid } from "@mui/material";
 import LinearIndeterminate from "../Progress";
 import ArrowBtn from "../ArrowButton";
