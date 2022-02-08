@@ -1,4 +1,4 @@
-import React, { memo, useEffect, useState } from "react";
+import React, { memo, useCallback, useEffect, useState } from "react";
 import PropTypes from "prop-types";
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 import { useTranslation } from "react-i18next";
@@ -73,26 +73,26 @@ const SimpleDialogDemo = () => {
 
   const dispatch = useDispatch();
 
-  const getCurrentCity = (value) => {
+  const getCurrentCity = useCallback((value) => {
     const result = CITY.filter((sity) => sity.city.includes(value));
     dispatch(createAction("SET_CURRENT_CITY", ...result));
-  };
+  },[dispatch]);
 
   useEffect(() => {
     getCurrentCity(selectedValue);
   // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [selectedValue]);
+  },[selectedValue]);
 
   const className = useSelector((state) => state.classNamePopup);
 
-  const handleClickOpen = () => {
+  const handleClickOpen = useCallback(() => {
     setOpen(true);
-  };
+  },[]);
 
-  const handleClose = (value) => {
+  const handleClose = useCallback((value) => {
     setOpen(false);
     setSelectedValue(value);
-  };
+  },[]);
 
   return (
     <>
