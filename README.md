@@ -62,7 +62,7 @@
 - Склонировать репозиторий
 
 ```
-  git clone
+  git clone https://github.com/Sergey-Shar/zen_car.git
 ```
 
 - Установить зависимости
