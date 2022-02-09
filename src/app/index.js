@@ -14,6 +14,7 @@ import { Container } from "@mui/material";
 import WorkShops from "../pages/Workshops"
 import FromZenCarPage from "../pages/FromZenCarPage"
 import WorkTypePage from "../pages/WorksTypePage"
+import CircularIndeterminate  from "../components/Loading"
 
 export default function App() {
   const dispatch = useDispatch();
@@ -25,7 +26,7 @@ export default function App() {
   }, [dispatch]);
 
   return (
-    <Suspense fallback={<div>Loading...</div>}>
+    <Suspense fallback={<CircularIndeterminate/> }>
       <Router>
         <Container maxWidth="xl">
           <Header />
