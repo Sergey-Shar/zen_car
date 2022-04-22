@@ -1,11 +1,13 @@
 
 # ZEN.CAR App
 
-## О проекте:
 
-Этот проект является частичной копией https://zen.car
 
-Моей задачей было повторить функционал из этой части приложения: https://zen.car/repair-wizard 
+## About the project:
+
+This project is a partial copy of https://zen.car
+
+My task was to repeat the functionality from this part of the application: https://zen.car/repair-wizard
 
 ![testwork example](./assets/images/img1.png)
 
@@ -13,21 +15,24 @@
 
 ![testwork example](./assets/images/img3.png)
 
-Здесь пользователь может пошагово выбирать услуги/симптомы и в итоге получает конечный список работ, который сохраняется в Local storage, что дает возможность вернуться к нему из любой части приложения. Так же функционал приложения позволяет пользователю перемещаться назад по дереву услуг и изменять список добавляя новые и удаляя не нужные работы из списка.
+Here, the user can select services/symptoms step by step and as a result receives a final list of works, which is stored in Local storage, which makes it possible to return to it from any part of the application. Also, the functionality of the application allows the user to navigate back through the tree of services and change the list by adding new and removing unnecessary work from the list.
 
-Данные об услугах и симптомах предоставляет API реализованное с помощью [GraphQl](https://graphql.org/)
+Service and symptom data is provided by an API implemented with[GraphQl](https://graphql.org/)
 
-Для интеграции с Google Maps я использовал библиотеку [Google-maps-react](https://www.npmjs.com/package/google-maps-react)
-
-Добавлена функция автоматического определения геолокации( так что открывая мое приложение, знайте я слежу за вами) шутка, google сможет это сделать только в том случае если вы ему позволите.
-
-Так же в приложении используется [Firebase](https://console.firebase.google.com/), благодоря чему добавлен функционал регистрации нового пользователя(клиента)  и   последующей его аутентификации на основе предоставленного адреса электронной почты и пароля. 
-
-В добавок мы имеем возможность  переводить  текст приложения с русского языка на английский  и наоборот, для добавления этой фичи я воспользовался [i18Next](https://react.i18next.com/)
+For integration with Google Maps I used the library [Google-maps-react](https://www.npmjs.com/package/google-maps-react)
 
 
+Added automatic geolocation function (so when you open my app, you know I'm following you) joke, google can only do this if you let it.
 
-### Для разработки приложения я использовал следующие инструменты:
+The application also uses [Firebase](https://console.firebase.google.com/), thanks to which the functionality of registering a new user (client) and its subsequent authentication based on the provided email address and password has been added.
+
+
+In addition, we have the ability to translate the text of the application from Russian into English and vice versa, to add this feature, I used [i18Next](https://react.i18next.com/)
+
+
+
+
+### The application was developed using the following technologies:
 
 * [React.js](https://reactjs.org/)
 
@@ -51,27 +56,25 @@
 
 
 
-В настоящей ветке вы можете ознакомиться с кодом.
+
+If you click here [PRESS ME HARD!!!](https://zen-car-test.web.app) you will see how it all works in the browser.
 
 
-[Tут]( https://zen-car-test.web.app) посмотреть на  работу приложения в браузере. 
+Fast start:
 
-
-Быстрый старт:
-
-- Склонировать репозиторий
+- Clone repository
 
 ```
   git clone https://github.com/Sergey-Shar/zen_car.git
 ```
 
-- Установить зависимости
+- Install dependencies
 
 ```
   yarn install
 ```
 
-- Запустить проект
+- Start project
 
 ```
   yarn start
