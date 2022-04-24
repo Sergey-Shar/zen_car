@@ -9,6 +9,9 @@ This project is a partial copy of https://zen.car
 
 My task was to repeat the functionality from this part of the application: https://zen.car/repair-wizard
 
+[Watch Demo](https://zen-car-test.web.app) 
+
+
 ![testwork example](./assets/images/img1.png)
 
 ![testwork example](./assets/images/img2.png)
@@ -53,10 +56,6 @@ In addition, we have the ability to translate the text of the application from R
 * [i18Next](https://react.i18next.com/)
 
 * [Material-UI](https://mui.com/)
-
-
-
-[Watch Demo](https://zen-car-test.web.app) 
 
 
 
