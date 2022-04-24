@@ -56,8 +56,8 @@ In addition, we have the ability to translate the text of the application from R
 
 
 
+[Watch Demo](https://zen-car-test.web.app) 
 
-If you click here [PRESS ME HARD!!!](https://zen-car-test.web.app) you will see how it all works in the browser.
 
 
 Fast start:
